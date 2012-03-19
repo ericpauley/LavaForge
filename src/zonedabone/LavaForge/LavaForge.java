@@ -25,6 +25,7 @@ public class LavaForge extends JavaPlugin implements Listener {
 
 	}
 
+	@EventHandler
 	public void onFurnaceBurn(FurnaceBurnEvent e) {
 		if (e.getFuel().getType() == Material.LAVA_BUCKET) {
 			final Block furnace = e.getBlock();
